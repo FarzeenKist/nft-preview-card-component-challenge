@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Fonts links -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body class="flex bg-db-main">
+    <main class="flex">
+      <article class="container ff-outfit padding-2 bg-db-card">
+        <div class="img-container">
+          <img
+            src="./images/image-equilibrium.jpg"
+            alt="image of the Nft"
+            class="img-nft"
+          />
+          <div class="overlay"></div>
+          <img src="./images/icon-view.svg" alt="" class="icon-view" />
+        </div>
+        <h1 class="text-white ff-outfit fs-800 margin-top-bot blue-hover">
+          Equilibrium #3429
+        </h1>
+        <p class="text-soft-blue fs-700 ff-outfit fw-regular margin-top-bot">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="details flex margin-top-bot">
+          <div class="price">
+            <img
+              src="./images/icon-ethereum.svg"
+              alt=""
+              class="detail-img inline-block"
+            />
+            <span class="text-cyan fs-600 ff-outfit fw-semibold">
+              0.041 ETH</span
+            >
+          </div>
+          <div class="time">
+            <img
+              src="./images/icon-clock.svg"
+              alt=""
+              class="detail-img inline-block"
+            />
+            <span class="text-soft-blue fs-600 ff-outfit fw-light">
+              3 days left</span
+            >
+          </div>
+        </div>
+        <div class="creator margin-top-bot flex">
+          <img
+            src="./images/image-avatar.png"
+            alt="portray of the Jules Wyvern"
+            class="avatar-img inline-block"
+          />
+          <p class="text-soft-blue fs-600 ff-outfit fw-regular inline-block">
+            Creation of
+            <span class="text-white blue-hover"> Jules Wyvern</span>
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <!--    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

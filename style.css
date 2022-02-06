@@ -1,0 +1,232 @@
+/* ------------------- */
+/* Custom Properties   */
+/* ------------------- */
+
+:root {
+  /* colors */
+  --clr-soft-blue: 215 52% 70%;
+  --clr-cyan: 178 100% 50%;
+  --clr-dark-blue-main: 217 54% 11%;
+  --clr-dark-blue-card: 216 50% 16%;
+  --clr-dark-blue-line: 215 32% 27%;
+  --clr-white: 0 0% 100%;
+  /* font size */
+  --fs-800: 2.4rem;
+  --fs-700: 1.7rem;
+  --fs-600: 1.75rem;
+
+  /* font weight */
+  --fw-semi-bold: 600;
+  --fw-regular: 400;
+  --fw-light: 300;
+  /* font-families */
+  --ff-outfit: "Outfit", sans-serif;
+}
+
+/* ------------------- */
+/* Reset               */
+/* ------------------- */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Reset font sizing */
+
+html {
+  font-size: 62.5%;
+}
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+div,
+h1,
+span,
+img,
+p {
+  margin: 0;
+}
+
+/* set up the body */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ===================== */
+/*   Utility classes    */
+/* ==================== */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.container {
+  max-width: 35rem;
+  width: 95%;
+}
+
+/* Text */
+
+.text-white {
+  color: hsl(var(--clr-white));
+}
+
+.text-cyan {
+  color: hsl(var(--clr-cyan));
+}
+
+.text-soft-blue {
+  color: hsla(var(--clr-soft-blue));
+}
+
+.ff-outfit {
+  font-family: var(--ff-outfit);
+}
+.fw-semibold {
+  font-weight: var(--fw-semi-boldbold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1.5px;
+}
+.text-align {
+  text-align: center;
+}
+.line-height {
+  line-height: 1.2;
+}
+/* Background */
+
+.bg-db-main {
+  background-color: hsl(var(--clr-dark-blue-main));
+}
+.bg-db-card {
+  background-color: hsl(var(--clr-dark-blue-card));
+}
+
+/* Spacing */
+
+.padding-2 {
+  padding: 2.6em 2.3em;
+}
+
+.margin-top-bot {
+  margin: 1.5rem 0;
+}
+/* =================== */
+/*      Components    */
+/* =================== */
+body {
+  margin-inline: 2rem;
+}
+.container {
+  border-radius: 1.25rem;
+}
+.img-container {
+  position: relative;
+  cursor: pointer;
+}
+.img-nft {
+  border-radius: 0.8rem;
+}
+.overlay {
+  background-color: hsl(var(--clr-cyan));
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.8rem;
+  display: none;
+}
+
+.img-container:hover .overlay,
+.img-container:focus .overlay {
+  display: block;
+}
+.icon-view {
+  position: absolute;
+  top: 40%;
+  left: 42.5%;
+  display: none;
+}
+
+.img-container:hover .icon-view,
+.img-container:focus .icon-view {
+  display: block;
+}
+
+.details.flex {
+  justify-content: space-between;
+}
+
+.creator {
+  padding: 2em 0 0 0;
+  border-top: 1px solid hsl(var(--clr-dark-blue-line));
+  gap: 2rem;
+}
+
+.avatar-img {
+  width: 12%;
+  border-radius: 50%;
+}
+
+.avatar-img:hover,
+.avatar-img:focus {
+  cursor: pointer;
+  border: 2px solid hsl(var(--clr-white));
+}
+
+.blue-hover:hover,
+.blue-hover:focus {
+  cursor: pointer;
+  color: hsl(var(--clr-cyan));
+}
