@@ -207,8 +207,14 @@ body {
 .details.flex {
   justify-content: space-between;
 }
+.price, .time {
+ display: flex;
+ align-items: center;
+}
 
 .creator {
+  display: flex;
+  justify-content: start;
   padding: 2em 0 0 0;
   border-top: 1px solid hsl(var(--clr-dark-blue-line));
   gap: 2rem;
@@ -217,12 +223,14 @@ body {
 .avatar-img {
   width: 12%;
   border-radius: 50%;
+  border: 2px solid hsl(var(--clr-white));
 }
 
 .avatar-img:hover,
 .avatar-img:focus {
   cursor: pointer;
-  border: 2px solid hsl(var(--clr-white));
+  border-width: 3px;
+  
 }
 
 .blue-hover:hover,
